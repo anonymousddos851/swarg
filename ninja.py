@@ -90,7 +90,7 @@ def approve_user(message):
 @bot.message_handler(commands=['disapprove'])
 def disapprove_user(message):
     if not is_user_admin(message.from_user.id, message.chat.id):
-        bot.send_message(message.chat.id, "*You are not authorized to use this command*.Please contact to admin :- @flash_hasan", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*You are not authorized to use this command*.Please contact to admin :- @swarg_developer", parse_mode='Markdown')
         return
 
     try:
